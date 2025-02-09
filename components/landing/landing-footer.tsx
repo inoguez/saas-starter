@@ -16,7 +16,7 @@ export function LandingFooter({
           classNameLabel='text-md'
         />
         <p className='text-sm text-off-white/40'>
-          © 2024 Realita. Todos los derechos reservados.
+          © {new Date().getFullYear()} Realita. Todos los derechos reservados.
         </p>
         <nav className='flex gap-4 justify-end'>
           <Link

@@ -200,7 +200,7 @@ p {
 }
 
 .realita-box {
-  @apply rounded-2xl border border-off-white/15 bg-jet-black/20 text-off-white/80 shadow-sm backdrop-blur-sm;
+  @apply rounded-2xl border border-off-white/25 bg-jet-black/20 text-off-white/80 shadow-sm backdrop-blur-sm;
 }
 
 .neon-highlight {
@@ -212,4 +212,13 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #999;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: #999;
 }
