@@ -1,7 +1,10 @@
+'use client';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { InteractiveHoverButton } from '../ui/interactive-button';
+import { useRouter } from 'next/navigation';
 
 export default function HeroHeader() {
+  const router = useRouter();
   return (
     <div className='flex flex-col gap-6 items-center text-center text-balance'>
       <div className='flex flex-col gap-4 '>
@@ -17,9 +20,9 @@ export default function HeroHeader() {
       </div>
 
       <div className='flex gap-4'>
-        <Button className='text-lg gap-2 items-center'>
-          Comenzar ahora <ArrowRight size={18} />
-        </Button>
+        <InteractiveHoverButton onClick={() => router.push('/sign-up')}>
+          Comenzar ahora
+        </InteractiveHoverButton>
         <Button variant={'secondary'} className='text-lg gap-2 items-center'>
           Demo
         </Button>

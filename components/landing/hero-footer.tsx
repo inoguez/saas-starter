@@ -1,8 +1,11 @@
-import { ArrowRight, Zap } from 'lucide-react';
+'use client';
+import { Zap } from 'lucide-react';
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { InteractiveHoverButton } from '../ui/interactive-button';
+import { useRouter } from 'next/navigation';
 
 export default function HeroFooter() {
+  const router = useRouter();
   return (
     <div className='flex flex-col gap-4 items-center text-center '>
       <Zap size={76} className='text-jade ' />
@@ -14,9 +17,9 @@ export default function HeroFooter() {
         </p>
       </div>
       <div>
-        <Button className='text-lg gap-2 items-center'>
-          Comenzar ahora <ArrowRight size={18} />
-        </Button>
+        <InteractiveHoverButton onClick={() => router.push('/sign-up')}>
+          Comenzar ahora
+        </InteractiveHoverButton>
       </div>
     </div>
   );

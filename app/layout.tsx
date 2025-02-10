@@ -24,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang='es' className={`${geist.className}`}>
-      <body className='min-h-[100dvh] bg-gradient-to-b from-jet-black to-jade-gradient bg-jet-black '>
+      <body className='min-h-[100dvh] bg-gradient-to-b to-jade-gradient from-jet-black   bg-jet-black '>
         <UserProvider userPromise={userPromise}>{children}</UserProvider>
       </body>
     </html>

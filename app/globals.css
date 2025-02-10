@@ -10,6 +10,8 @@
 
 @theme {
   --color-jade: hsl(var(--jade));
+  --color-soft-gold: hsl(var(--soft-gold));
+
   --color-jet-black: hsl(var(--jet-black));
   --color-jade-gradient: hsl(var(--jade-gradient));
   --color-off-white: hsl(var(--off-white));
@@ -59,6 +61,14 @@
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
+
+  @keyframes border-beam {
+    100% {
+      offset-distance: 100%;
+    }
+  }
 }
 
 /*
@@ -117,6 +127,7 @@
     --jet-black: 0 0% 14.51%;
     --jade-gradient: 158.05 41.41% 19.41%;
     --off-white: 20 10.34% 94.31%;
+    --soft-gold: 174 100% 50%;
 
     --r-blue: 206.57 89.74% 54.12%;
     --r-red: 4.11 89.62% 58.43%;
@@ -132,6 +143,8 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --duration: 13;
   }
 
   .dark {
@@ -173,6 +186,8 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --duration: 13;
   }
 }
 
@@ -206,19 +221,18 @@ p {
 .neon-highlight {
   @apply backdrop-blur-sm  hover:border-jade/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 duration-100 ease-in-out;
 }
+.fade-out-image {
+  mask-image: linear-gradient(
+    to bottom,
+    hsl(var(--jet-black) / 1),
+    hsl(var(--jet-black) / 0)
+  );
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
+  -webkit-text-fill-color: hsl(var(--off-white) / 0.8) !important;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
-  -webkit-text-fill-color: #999;
-}
-input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 50px white inset;
-  -webkit-text-fill-color: #999;
 }
