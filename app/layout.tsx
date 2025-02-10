@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
 import { UserProvider } from '@/lib/auth';
 import { getUser } from '@/lib/db/queries';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Realita MX',
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang='es' className={`${geist.className}`}>
       <body className='min-h-[100dvh] bg-gradient-to-b to-jade-gradient from-jet-black   bg-jet-black '>
         <UserProvider userPromise={userPromise}>{children}</UserProvider>
+        <Analytics />
       </body>
     </html>
   );
