@@ -14,47 +14,102 @@ import { Button } from '@/components/ui/button';
 export default function PrincingContent() {
   const plans = [
     {
-      name: 'Plan Básico',
+      name: 'Plan Gratis',
       price: {
-        monthly: 499,
-        yearly: 4990,
+        monthly: 0,
+        yearly: 0,
       },
       description:
-        'Ideal para usuarios individuales o pequeñas inmobiliarias que están comenzando a gestionar sus propiedades.',
+        'Explora y experimenta con las funcionalidades esenciales de Realita CRM sin compromiso. Perfecto para evaluar la plataforma y comprobar su potencial.',
       features: [
-        'Gestión de hasta 20 propiedades activas',
-        'Registro de 100 contactos (clientes o leads)',
-        'Acceso al panel de tareas',
-        'Actualizaciones automáticas de software y soporte técnico básico',
-        'Notificaciones por email para seguimiento de tareas',
-        'Integración básica con WhatsApp y correo electrónico para comunicarse con clientes',
-        'Historial de actividad para seguimiento básico',
+        'Gestión de hasta 5 propiedades activas con dashboard intuitivo',
+        'Registro de hasta 50 contactos (clientes, leads o inquilinos)',
+        'Acceso limitado al panel de tareas para seguimiento básico de actividades',
+        'Notificaciones básicas por email',
+        'Integración esencial con correo electrónico',
+        'Acceso a recursos de autoayuda: tutoriales, documentación y comunidad de usuarios',
+        'Soporte vía foro y FAQ',
+      ],
+    },
+    {
+      name: 'Plan Básico',
+      price: {
+        monthly: 7999,
+        yearly: 79990,
+      },
+      description:
+        'Diseñado para pequeñas inmobiliarias o agentes independientes que gestionan hasta 50 propiedades y buscan optimizar sus operaciones diarias.',
+      features: [
+        'Gestión de hasta 50 propiedades con un dashboard optimizado',
+        'Registro de hasta 1,000 contactos (clientes, leads, inquilinos)',
+        'Panel de tareas con funciones esenciales de organización y seguimiento',
+        'Notificaciones automáticas por email para recordatorios y seguimiento',
+        'Integración básica con WhatsApp y correo electrónico para comunicación directa',
+        'Reportes y análisis básicos para monitorear desempeño',
+        'Onboarding inicial y soporte técnico estándar',
       ],
     },
     {
       name: 'Plan Profesional',
       price: {
-        monthly: 1499,
-        yearly: 14990,
+        monthly: 14999,
+        yearly: 149990,
       },
       description:
-        'Ideal para inmobiliarias medianas que requieren un CRM más completo y mayor capacidad.',
+        'Ideal para inmobiliarias medianas que requieren mayor capacidad, análisis detallados y automatización para potenciar su crecimiento.',
       features: [
-        'Gestión de hasta 100 propiedades activas',
-        'Registro de 1,000 contactos',
-        'Panel de últimas propiedades y reportes detallados de desempeño',
-        'Acceso a todas las funcionalidades del panel de tareas',
-        'Soporte prioritario y actualizaciones premium',
-        'Automatización de correos electrónicos para el seguimiento de leads',
-        'Integración avanzada con redes sociales y WhatsApp',
-        'Funcionalidades de analítica para evaluar el rendimiento de ventas',
-        'Exportación de datos en formatos Excel y PDF',
-        'Acceso multiusuario (hasta 3 usuarios)',
+        'Gestión de hasta 200 propiedades con dashboard avanzado y análisis en tiempo real',
+        'Registro de hasta 5,000 contactos con segmentación y seguimiento detallado',
+        'Panel de tareas con automatización de workflows y asignación dinámica de tareas',
+        'Automatización de correos electrónicos para nurturing y seguimiento de leads',
+        'Integración avanzada: WhatsApp, email y redes sociales (Facebook, Instagram) junto a herramientas de marketing digital',
+        'Reportes personalizados y análisis avanzado de rendimiento de ventas y propiedades',
+        'Acceso multiusuario (hasta 5 usuarios) con roles y permisos configurables',
+        'Soporte prioritario 24/7 con tiempos de respuesta rápidos',
+      ],
+    },
+    {
+      name: 'Plan Corporativo',
+      price: {
+        monthly: 24999,
+        yearly: 249990,
+      },
+      description:
+        'Para grandes inmobiliarias y administradores de edificios que requieren una solución integral, escalable y con herramientas avanzadas de análisis y automatización.',
+      features: [
+        'Gestión de hasta 500 propiedades con análisis de rendimiento en tiempo real y dashboard integral',
+        'Registro ilimitado de contactos con segmentación avanzada y seguimiento personalizado',
+        'Automatización total de flujos de trabajo: campañas de email marketing y mensajes automatizados en WhatsApp',
+        'Integración completa con sistemas contables, ERP y plataformas de terceros',
+        'Funcionalidades completas de analítica y BI para informes estratégicos y personalizados',
+        'Acceso multiusuario (hasta 20 usuarios) con permisos y roles altamente configurables',
+        'Funciones premium de IA para predicción de tendencias, detección de oportunidades y generación automática de reportes',
+        'Soporte dedicado con consultoría estratégica y un gestor de cuenta asignado',
+      ],
+    },
+    {
+      name: 'Plan a la Medida (Enterprise)',
+      price: {
+        monthly: 'Contactar para cotización',
+        yearly: 'Contactar para cotización',
+      },
+      description:
+        'Solución 100% personalizada para grandes empresas con necesidades específicas, completamente integrada a tus procesos y sistemas existentes.',
+      features: [
+        'Desarrollo de funcionalidades a medida para satisfacer requerimientos únicos',
+        'Integración total con sistemas empresariales y APIs personalizadas',
+        'Dashboards y reportes personalizados basados en los KPIs de tu negocio',
+        'Capacitación y onboarding personalizados para equipos de alto rendimiento',
+        'Soporte 24/7 con un equipo dedicado y consultoría en optimización de procesos',
+        'Funcionalidades avanzadas de IA y machine learning adaptadas a tus necesidades',
+        'Garantía de seguridad y cumplimiento normativo a nivel empresarial',
+        'Gestión de proyectos con seguimiento detallado e implementación por un gerente de cuenta exclusivo',
       ],
     },
   ];
+
   return (
-    <div className='grid grid-cols-2 gap-4'>
+    <div className='grid grid-cols-3 gap-4'>
       {plans.map((plan, index) => (
         <Card
           key={index}
