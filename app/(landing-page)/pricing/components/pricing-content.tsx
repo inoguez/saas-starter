@@ -68,44 +68,44 @@ export default function PrincingContent() {
         'Soporte prioritario 24/7 con tiempos de respuesta rápidos',
       ],
     },
-    {
-      name: 'Plan Corporativo',
-      price: {
-        monthly: 24999,
-        yearly: 249990,
-      },
-      description:
-        'Para grandes inmobiliarias y administradores de edificios que requieren una solución integral, escalable y con herramientas avanzadas de análisis y automatización.',
-      features: [
-        'Gestión de hasta 500 propiedades con análisis de rendimiento en tiempo real y dashboard integral',
-        'Registro ilimitado de contactos con segmentación avanzada y seguimiento personalizado',
-        'Automatización total de flujos de trabajo: campañas de email marketing y mensajes automatizados en WhatsApp',
-        'Integración completa con sistemas contables, ERP y plataformas de terceros',
-        'Funcionalidades completas de analítica y BI para informes estratégicos y personalizados',
-        'Acceso multiusuario (hasta 20 usuarios) con permisos y roles altamente configurables',
-        'Funciones premium de IA para predicción de tendencias, detección de oportunidades y generación automática de reportes',
-        'Soporte dedicado con consultoría estratégica y un gestor de cuenta asignado',
-      ],
-    },
-    {
-      name: 'Plan a la Medida (Enterprise)',
-      price: {
-        monthly: 'Contactar para cotización',
-        yearly: 'Contactar para cotización',
-      },
-      description:
-        'Solución 100% personalizada para grandes empresas con necesidades específicas, completamente integrada a tus procesos y sistemas existentes.',
-      features: [
-        'Desarrollo de funcionalidades a medida para satisfacer requerimientos únicos',
-        'Integración total con sistemas empresariales y APIs personalizadas',
-        'Dashboards y reportes personalizados basados en los KPIs de tu negocio',
-        'Capacitación y onboarding personalizados para equipos de alto rendimiento',
-        'Soporte 24/7 con un equipo dedicado y consultoría en optimización de procesos',
-        'Funcionalidades avanzadas de IA y machine learning adaptadas a tus necesidades',
-        'Garantía de seguridad y cumplimiento normativo a nivel empresarial',
-        'Gestión de proyectos con seguimiento detallado e implementación por un gerente de cuenta exclusivo',
-      ],
-    },
+    // {
+    //   name: 'Plan Corporativo',
+    //   price: {
+    //     monthly: 24999,
+    //     yearly: 249990,
+    //   },
+    //   description:
+    //     'Para grandes inmobiliarias y administradores de edificios que requieren una solución integral, escalable y con herramientas avanzadas de análisis y automatización.',
+    //   features: [
+    //     'Gestión de hasta 500 propiedades con análisis de rendimiento en tiempo real y dashboard integral',
+    //     'Registro ilimitado de contactos con segmentación avanzada y seguimiento personalizado',
+    //     'Automatización total de flujos de trabajo: campañas de email marketing y mensajes automatizados en WhatsApp',
+    //     'Integración completa con sistemas contables, ERP y plataformas de terceros',
+    //     'Funcionalidades completas de analítica y BI para informes estratégicos y personalizados',
+    //     'Acceso multiusuario (hasta 20 usuarios) con permisos y roles altamente configurables',
+    //     'Funciones premium de IA para predicción de tendencias, detección de oportunidades y generación automática de reportes',
+    //     'Soporte dedicado con consultoría estratégica y un gestor de cuenta asignado',
+    //   ],
+    // },
+    // {
+    //   name: 'Plan a la Medida (Enterprise)',
+    //   price: {
+    //     monthly: 'Contactar para cotización',
+    //     yearly: 'Contactar para cotización',
+    //   },
+    //   description:
+    //     'Solución 100% personalizada para grandes empresas con necesidades específicas, completamente integrada a tus procesos y sistemas existentes.',
+    //   features: [
+    //     'Desarrollo de funcionalidades a medida para satisfacer requerimientos únicos',
+    //     'Integración total con sistemas empresariales y APIs personalizadas',
+    //     'Dashboards y reportes personalizados basados en los KPIs de tu negocio',
+    //     'Capacitación y onboarding personalizados para equipos de alto rendimiento',
+    //     'Soporte 24/7 con un equipo dedicado y consultoría en optimización de procesos',
+    //     'Funcionalidades avanzadas de IA y machine learning adaptadas a tus necesidades',
+    //     'Garantía de seguridad y cumplimiento normativo a nivel empresarial',
+    //     'Gestión de proyectos con seguimiento detallado e implementación por un gerente de cuenta exclusivo',
+    //   ],
+    // },
   ];
 
   return (
