@@ -20,6 +20,7 @@ export const RelationLinks = () => {
       href: '/dashboard/relations/providers',
     },
   ];
+
   return (
     <Tabs>
       <TabsList>
@@ -27,7 +28,7 @@ export const RelationLinks = () => {
           <TabsTrigger key={route.name} asChild value={route.name}>
             <Link
               className={cn('px-6 py-2 rounded-full hover:text-jade', {
-                'bg-jade/30 text-jade': pathName.startsWith(route.href),
+                'bg-jade/30 text-jade': pathName.includes(route.href),
               })}
               href={route.href}
               key={route.name}

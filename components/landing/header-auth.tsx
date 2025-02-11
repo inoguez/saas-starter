@@ -2,13 +2,12 @@
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
-import { use, useState } from 'react';
+import { use } from 'react';
 import { useUser } from '@/lib/auth';
 
 export function AuthMenu() {
   const { userPromise } = useUser();
   const user = use(userPromise);
-
   return (
     <div className={cn('flex gap-4 items-center place-self-end')}>
       <div className='flex gap-2'>

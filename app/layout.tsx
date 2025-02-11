@@ -6,7 +6,7 @@ import { getUser } from '@/lib/db/queries';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-  title: 'Realita MX',
+  title: 'Realita',
   description: 'Get started quickly with Next.js, Postgres, and Stripe.',
 };
 
